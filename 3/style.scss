@@ -1,0 +1,19 @@
+@use "stl";
+body {
+  background-color: rgba(255, 80, 80, 0.714);
+
+  .box {
+    width: stl.$weight;
+    height: stl.$height;
+    // width: 100px;
+    // height: 100px;
+    background-color: rgba(255, 1, 124, 0.536);
+    border: 5px;
+    margin: 5px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}

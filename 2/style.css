@@ -1,0 +1,17 @@
+body {
+  background-color: #ff8b3e;
+  color: #894a25;
+}
+body .box {
+  width: 500px;
+  height: 100px;
+  border: 5px;
+  margin: 5px;
+  background-color: #894a25;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 2px dashed #ccc;
+  color: #ff8b3e;
+}/*# sourceMappingURL=style.css.map */
