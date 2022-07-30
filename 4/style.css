@@ -1,0 +1,13 @@
+body {
+  background-color: aquamarine;
+}
+body .box {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  font-size: 40px;
+  color: rgb(255, 131, 127);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
