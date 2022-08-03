@@ -2,7 +2,8 @@ let str = prompt("Введите математическое выражение
 console.log(str);
 
 let operatorA = parseInt(str);
-let operatorB = parseInt(str.slice(+operatorA.toString().length + 1));
+let reverseOperatorA = str.slice(+operatorA.toString().length + 1);
+let operatorB = parseInt(reverseOperatorA);
 
 let lengthA = operatorA.toString().length;
 let lengthB = operatorB.toString().length;
