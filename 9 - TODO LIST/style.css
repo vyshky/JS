@@ -1,23 +1,44 @@
-body{
-    background-color: cadetblue;
+body {   
+    /* background-color: #5CDB94; */
+    /* 1 вариант */
+    /* background: url('./images/background.jpg') 0 0/cover no-repeat; */
+    /* -------------------------------------------------- */
+    /* 2 вариант */
+    /* background-image: url('./images/background2.jpg');
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;     */
+    /* -------------------------------------------------- */
+    /* 3 вариант */
+    /* background-image: url(./images/background.jpg);   
+    background-size: cover;  */
+    /* тоже самое - object-fit: cover; - background-size: 100%; */
+    /* -------------------------------------------------- */
+    /* Отменяем повторение фона */
+    /* background-repeat: no-repeat; */
 }
 
-.container { 
+
+.container {    
     /* выровнять блок по центру относительно контейнера в котом он находится */
     margin-left: auto;
     margin-right: auto;
-    /* -------------------------------------------------- */    
+    /* -------------------------------------------------- */
     /* Установить размер в % от размера body */
-    width: 60%;
-  }
+    width: 90%;
+}
 
 .list-group {
+    margin-left: auto;
+    margin-right: auto;
+    /* Установить размер в % от размера container */
+    width: 60%;
 }
 
 .list-group-item {
-    /* линия вокруг блока  */
+    /* линия вокруг блока li  */
     border: 2px solid #dedede;
-     /* -------------------------------------------------- */
+    /* -------------------------------------------------- */
     /* тут переопределяем и инициализируем низ и топ в сумме они дают 2px */
     border-bottom: 1px solid #dedede;
     border-top: 1px solid #dedede;
@@ -25,23 +46,25 @@ body{
     font-size: 24px;
     padding-bottom: 60px;
     /* Пустое место перед строкой */
-    text-indent: 50px;  
-     /* -------------------------------------------------- */
+    text-indent: 50px;
+    /* -------------------------------------------------- */
     /* Удаляем пустое место , там где были маркеры   */
-    margin-left:-40px;
-    /* -------------------------------------------------- */    
+    margin-left: -40px;
+    /* -------------------------------------------------- */
     /* удалить маркер */
-    list-style-type: none; 
-    /* -------------------------------------------------- */  
-    background-color: white;   
+    list-style-type: none;
+    /* -------------------------------------------------- */
+    background-color: white;
 }
 
 .list-group .list-group-item:first-child {
+    border-top: 2px solid #dedede;
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
 }
 
 .list-group .list-group-item:last-child {
+    border-bottom: 2px solid #dedede;
     border-bottom-right-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
 }
