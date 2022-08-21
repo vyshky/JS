@@ -1,0 +1,47 @@
+body{
+    background-color: cadetblue;
+}
+
+.container { 
+    /* выровнять блок по центру относительно контейнера в котом он находится */
+    margin-left: auto;
+    margin-right: auto;
+    /* -------------------------------------------------- */    
+    /* Установить размер в % от размера body */
+    width: 60%;
+  }
+
+.list-group {
+}
+
+.list-group-item {
+    /* линия вокруг блока  */
+    border: 2px solid #dedede;
+     /* -------------------------------------------------- */
+    /* тут переопределяем и инициализируем низ и топ в сумме они дают 2px */
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    /* -------------------------------------------------- */
+    font-size: 24px;
+    padding-bottom: 60px;
+    /* Пустое место перед строкой */
+    text-indent: 50px;  
+     /* -------------------------------------------------- */
+    /* Удаляем пустое место , там где были маркеры   */
+    margin-left:-40px;
+    /* -------------------------------------------------- */    
+    /* удалить маркер */
+    list-style-type: none; 
+    /* -------------------------------------------------- */  
+    background-color: white;   
+}
+
+.list-group .list-group-item:first-child {
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.list-group .list-group-item:last-child {
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+}
