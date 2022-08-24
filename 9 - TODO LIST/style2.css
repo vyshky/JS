@@ -3,14 +3,19 @@
     height: 50px;
 }
 
-.form-control2{     
+.form-control2{
+    /* outline: 4px solid #80BDFF;
+    border:  1px solid red;-- Изменять при выделении и возвращать цвет к исходному - после */
     padding-bottom: 7px;
     padding-top: 7px;
     text-indent: 20px;
     border:  1px solid #dedede;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    width: 80%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    margin-right: -98.8px;
 }
 
 .btn1{
@@ -19,18 +24,18 @@
     padding-top: 7px;
     border: 1px solid #6C757D;
     background-color: white;
-    margin-left: -5px;
+    margin-left: -4.5px;
     width: 50px;
 }
 
-.btn2{   
+.btn2{
     color:#6C757D; 
     padding-bottom: 7px;
     padding-top: 7px;
     border: 1px solid #6C757D;
-    border-left: 0px;
+    /*border-left: 1px solid #6C757D;*/
     background-color: white;
-    margin-left: -5px;
+    margin-left: -5.5px;
     width: 50px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
