@@ -1,7 +1,9 @@
 class MyForm {
   static stringEmpty = "";
+  static listSelector;
 
-  static addElementToList(element) {    
+  static addElementToList(element,list) {  
+    this.listSelector = list;
     element.addEventListener("submit", function (e) {     
       e.preventDefault(); // предотвращает вызов функции по дефолту
 
@@ -22,7 +24,7 @@ class MyForm {
     // 1 решение
     let arr = item.getElementsByTagName("TEXT");
     if (arr[0].innerHTML !== this.stringEmpty) {
-      document.querySelector("#myList").append(item);
+      this.listSelector.append(item);
     }
   }
 
