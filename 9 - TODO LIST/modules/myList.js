@@ -5,5 +5,4 @@ class MyList {
     });
   }
 }
-
 export { MyList };
