@@ -1,5 +1,5 @@
 body {    
-    min-width: 600px;
+    min-width: 550px;
     /* background-color: #5CDB94; */
     /* 1 вариант */
     /* background: url('./images/background.jpg') 0 0/cover no-repeat; */
@@ -19,7 +19,7 @@ body {
     /* background-repeat: no-repeat; */
 }
 
-.container {    
+.container2 {    
     /* выровнять блок по центру относительно контейнера в котом он находится */
     margin-left: auto;
     margin-right: auto;
@@ -28,15 +28,15 @@ body {
     width: 50%;
 }
 
-.list-group {
+.list-group2 {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     /* Установить размер в % от размера container */
-    /* width: 60%; */
+    width: 100%; 
 }
 
-.list-group-item {
+.list-group-item2 {
     /* линия вокруг блока li  */
     /* border: 1px solid #dedede; */
     /* -------------------------------------------------- */
@@ -46,13 +46,15 @@ body {
     border-right: 1px solid #dedede;
     /* border-top: 0.5px solid #dedede; */
     /* -------------------------------------------------- */
+    margin-left: -32px;
     font-size: 16px;
     /* Добавляет пустое место внутри контейнера . Создает отступы вокруг содержимого для каждого элемента в листе*/
     padding-bottom: 7px;
     padding-top: 7px;
+    padding-left: 5px;
     /* -------------------------------------------------- */
     /* Пустое место перед строкой для текста*/
-    text-indent: 13px;
+    /* text-indent: 13px; */
     /* -------------------------------------------------- */
     /* Удаляем пустое место , там где были маркеры  . Добавляет отступы с наружы контейнера */
     /* margin-left: -40px; */
@@ -63,13 +65,13 @@ body {
     background-color: white;
 }
 
-.list-group .list-group-item:first-child {
+.list-group2 .list-group-item2:first-child {
     border-top: 1px solid #dedede;
     border-top-left-radius: 5px 5px;
     border-top-right-radius: 5px 5px;
 }
 
-.list-group .list-group-item:last-child {
+.list-group2 .list-group-item2:last-child {
     border-bottom: 1px solid #dedede;
     border-bottom-right-radius: 5px 5px;
     border-bottom-left-radius: 5px 5px;
