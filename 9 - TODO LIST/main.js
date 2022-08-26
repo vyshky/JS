@@ -28,17 +28,3 @@ myList.listSelector.addEventListener("click", function (e) {
     myList.delete(e);
   }
 });
-
-// let arrDel = document.querySelector(".delete");
-// console.log(arrDel);
-
-// arrDel.array.forEach(element => {
-//     element.addEventListener("click",function(e){
-//         console.log(e.target);
-//     });
-// });
-
-// document.querySelector(".highlight").addEventListener()
-
-// MyForm.addElementToList(myFormSelector,listSelector);
-// MyList.clearList(clearSelector,listSelector);
