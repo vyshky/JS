@@ -1,39 +1,15 @@
 class MyForm {
-  static stringEmpty = "";
-  static listSelector;
+  stringEmpty = "";
+  formSelector;
 
-  static addElementToList(element,list) {  
-    this.listSelector = list;
-    element.addEventListener("submit", function (e) {     
-      e.preventDefault(); // предотвращает вызов функции по дефолту
-
-      let li = document.createElement("li");
-      li.className = "list-group-item2";
-      li.innerHTML =
-        '<deleteIcon class="m-1">🤢</deleteIcon><approve class="m-1">✔</approve>' +
-        "<text>" +
-        element.taskName.value; +
-        "</text>";
-
-      MyForm.addToList(li);
-      MyForm.clearTextBox(myForm.taskName);
-    });
-  }
- 
-  static addToList(item) {
-    // 1 решение
-    let arr = item.getElementsByTagName("TEXT");
-    if (arr[0].innerHTML !== this.stringEmpty) {
-      this.listSelector.append(item);
-    }
+  constructor(form){
+    this.formSelector = form;
   }
 
-  static clearTextBox(element) {
-    if (element.value) {
-      element.value = this.stringEmpty;
-    }
+  clear() {   
+      this.formSelector.reset();
+      // this.formSelector.taskName.value = this.stringEmpty;   
   }
 }
 
 export { MyForm };
-// export default randomSquare;

@@ -1,0 +1,9 @@
+*{
+    user-select: none;
+}
+span,li{
+    cursor: pointer;
+}
+.highlight{
+    background-color: green;
+}
