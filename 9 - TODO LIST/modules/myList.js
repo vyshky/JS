@@ -21,7 +21,7 @@ class MyList {
     }
   }
   highlight(e) {
-    let classList = event.target.parentElement.classList;
+    let classList = e.target.parentElement.classList;
     if (classList.contains("highlight")) {
       classList.remove("highlight");
     } else {
