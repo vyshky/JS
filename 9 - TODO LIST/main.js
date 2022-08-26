@@ -9,9 +9,9 @@ myForm.formSelector.addEventListener("submit", function (e) {
   let item = document.createElement("li");
   item.className = "list-group-item2";
   item.innerHTML =
-    '<delete>🤢</delete><approve>✔</approve>' +
+    '<delete>❌</delete><approve>✅</approve>' +
     "<text>" +
-    document.forms.myForm.taskName.value +
+    e.target.taskName.value
     "</text>";
   myList.addElement(item);
   myForm.clear();
