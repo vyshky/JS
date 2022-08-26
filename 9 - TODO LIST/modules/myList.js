@@ -1,5 +1,4 @@
 class MyList {
-  stringEmpty = "";
   listSelector;
 
   constructor(list) {
@@ -11,8 +10,13 @@ class MyList {
   }
 
   addElement(item) {
-    let arr = item.getElementsByTagName("TEXT");
-    if (arr[0].innerHTML !== this.stringEmpty) {
+    // let arr = item.getElementsByTagName("TEXT"); // получает массив
+    // if (arr[0].innerHTML) {
+    //   this.listSelector.append(item);
+    // }
+
+    let str = item.querySelector("TEXT").innerHTML; // получает первый найденный селектор
+    if (str) {
       this.listSelector.append(item);
     }
   }

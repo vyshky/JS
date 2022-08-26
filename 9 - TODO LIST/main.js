@@ -4,7 +4,7 @@ import { MyForm } from "./modules/myForm.js";
 let myList = new MyList(document.querySelector("#myList"));
 let myForm = new MyForm(document.forms.myForm);
 
-document.forms.myForm.addEventListener("submit", function (e) {
+myForm.formSelector.addEventListener("submit", function (e) {
   e.preventDefault();
   let item = document.createElement("li");
   item.className = "list-group-item2";
