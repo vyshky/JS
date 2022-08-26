@@ -1,5 +1,5 @@
-import { MyList } from "./modules/myList.js";
-import { MyForm } from "./modules/myForm.js";
+import { MyList } from "./mylist/myList.js";
+import { MyForm } from "./myform/myForm.js";
 
 let myList = new MyList(document.querySelector("#myList"));
 let myForm = new MyForm(document.forms.myForm);
