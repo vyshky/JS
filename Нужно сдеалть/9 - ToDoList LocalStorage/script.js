@@ -72,7 +72,7 @@
 // })
 
 
-document.addEventListener('DOMContentLoaded',function() {
+document.addEventListener('DOMContentLoaded',function() {  // загрузка данных из localStorage перед загрузкой страницы
     let taskJson = localStorage.getItem("myTasks");
 
     if(taskJson){
